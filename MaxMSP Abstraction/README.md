@@ -37,9 +37,9 @@ Version 1.1 was updated with Max 9. Version 1.0 was created with Max/MSP 8.5.6.
 
 ## <a name="About"></a>About
 
-This is an abstraction for Max/MSP that is built around the Max/MSP stutter~ object. This contains all features as the br.stutter.a.1.0 but with extras. This effect adds LFOs in sync with each grain that can manipulate a filter, amplitude, and panning.
+This is an abstraction for Max/MSP that is built around the Max/MSP stutter~ object. This contains all features as br.stutter.a but with extras. This effect adds LFOs in sync with each grain that can manipulate a filter, amplitude, and panning.
 
-For simpler version of this effect, try [br.stutter.a.1.0](https://github.com/guaguanco127/br.stutter.a.1.0) or, for a more complext version of this effect, try [br.stutter.c](https://github.com/guaguanco127/br.stutter.c)
+For simpler version of this effect, try [br.stutter.a](https://github.com/guaguanco127/br.stutter.a) or, for a more complext version of this effect, try [br.stutter.c](https://github.com/guaguanco127/br.stutter.c)
   
 **On/Off:** When Stutter is turned on, the signal is interrupted and a history of the signal is repeated based on the grain size. 
 

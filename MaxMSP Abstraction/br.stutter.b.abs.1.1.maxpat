@@ -9,10 +9,10 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "openrect": [ 114.0, 121.0, 492.0, 160.0 ],
+        "openrect": [ 114.0, 121.0, 263.0, 156.0 ],
         "openrectmode": 0,
         "openinpresentation": 1,
-        "devicewidth": 492.0,
+        "devicewidth": 263.0,
         "boxes": [
             {
                 "box": {
@@ -284,7 +284,7 @@
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_enum": [ "off", "on" ],
-                            "parameter_longname": "live.button",
+                            "parameter_longname": "live.button[1]",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "live.button",
@@ -1418,7 +1418,7 @@
                             "parameter_exponent": 3.0,
                             "parameter_initial": [ 0 ],
                             "parameter_initial_enable": 1,
-                            "parameter_longname": "live.dial[10]",
+                            "parameter_longname": "live.dial[12]",
                             "parameter_mmax": 0.85,
                             "parameter_modmode": 0,
                             "parameter_shortname": "Resonance",
@@ -2619,7 +2619,7 @@
                             "parameter_enum": [ "Stutter ", "val2" ],
                             "parameter_initial": [ 1 ],
                             "parameter_initial_enable": 1,
-                            "parameter_longname": "live.text[4]",
+                            "parameter_longname": "live.text[5]",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "live.text[1]",
@@ -3302,7 +3302,7 @@
                             "parameter_enum": [ "Stutter ", "val2" ],
                             "parameter_initial": [ 1 ],
                             "parameter_initial_enable": 1,
-                            "parameter_longname": "live.text[3]",
+                            "parameter_longname": "live.text[7]",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "live.text[1]",
@@ -3355,7 +3355,7 @@
                         },
                         "valueof": {
                             "parameter_enum": [ "Stutter ", "val2" ],
-                            "parameter_longname": "live.text[1]",
+                            "parameter_longname": "live.text[6]",
                             "parameter_mmax": 1,
                             "parameter_modmode": 0,
                             "parameter_shortname": "live.text[1]",
@@ -3383,7 +3383,7 @@
                     "saved_attribute_attributes": {
                         "valueof": {
                             "parameter_initial": [ 10000 ],
-                            "parameter_longname": "live.numbox[2]",
+                            "parameter_longname": "live.numbox[4]",
                             "parameter_mmax": 2000.0,
                             "parameter_modmode": 0,
                             "parameter_shortname": "live.numbox",
@@ -3416,7 +3416,7 @@
                         "valueof": {
                             "parameter_initial": [ 1000 ],
                             "parameter_initial_enable": 1,
-                            "parameter_longname": "live.dial[5]",
+                            "parameter_longname": "live.dial[10]",
                             "parameter_mmax": 1000.0,
                             "parameter_mmin": 5.0,
                             "parameter_modmode": 0,
@@ -3451,7 +3451,7 @@
                         "valueof": {
                             "parameter_initial": [ 5.0 ],
                             "parameter_initial_enable": 1,
-                            "parameter_longname": "live.dial[4]",
+                            "parameter_longname": "live.dial[11]",
                             "parameter_mmax": 1000.0,
                             "parameter_mmin": 5.0,
                             "parameter_modmode": 0,
@@ -3691,7 +3691,7 @@
                         "valueof": {
                             "parameter_initial": [ 1 ],
                             "parameter_initial_enable": 1,
-                            "parameter_longname": "live.numbox",
+                            "parameter_longname": "live.numbox[3]",
                             "parameter_mmax": 32.0,
                             "parameter_mmin": -32.0,
                             "parameter_modmode": 0,
@@ -4734,7 +4734,7 @@
                                                             "parameter_initial": [ 1 ],
                                                             "parameter_initial_enable": 1,
                                                             "parameter_invisible": 1,
-                                                            "parameter_longname": "toggle[3]",
+                                                            "parameter_longname": "toggle[6]",
                                                             "parameter_mmax": 1.0,
                                                             "parameter_modmode": 0,
                                                             "parameter_shortname": "toggle",
@@ -4800,7 +4800,7 @@
                                                             "parameter_initial": [ 1 ],
                                                             "parameter_initial_enable": 1,
                                                             "parameter_invisible": 1,
-                                                            "parameter_longname": "flonum[2]",
+                                                            "parameter_longname": "flonum[4]",
                                                             "parameter_modmode": 0,
                                                             "parameter_shortname": "flonum",
                                                             "parameter_type": 3
@@ -4827,7 +4827,7 @@
                                                             "parameter_initial": [ 100 ],
                                                             "parameter_initial_enable": 1,
                                                             "parameter_invisible": 1,
-                                                            "parameter_longname": "number[2]",
+                                                            "parameter_longname": "number[4]",
                                                             "parameter_modmode": 0,
                                                             "parameter_shortname": "number",
                                                             "parameter_type": 3
@@ -7037,7 +7037,7 @@
                                                             "parameter_initial": [ 1 ],
                                                             "parameter_initial_enable": 1,
                                                             "parameter_invisible": 1,
-                                                            "parameter_longname": "toggle",
+                                                            "parameter_longname": "toggle[5]",
                                                             "parameter_mmax": 1.0,
                                                             "parameter_modmode": 0,
                                                             "parameter_shortname": "toggle",
@@ -7103,7 +7103,7 @@
                                                             "parameter_initial": [ 1 ],
                                                             "parameter_initial_enable": 1,
                                                             "parameter_invisible": 1,
-                                                            "parameter_longname": "flonum",
+                                                            "parameter_longname": "flonum[3]",
                                                             "parameter_modmode": 0,
                                                             "parameter_shortname": "flonum",
                                                             "parameter_type": 3
@@ -7130,7 +7130,7 @@
                                                             "parameter_initial": [ 100 ],
                                                             "parameter_initial_enable": 1,
                                                             "parameter_invisible": 1,
-                                                            "parameter_longname": "number",
+                                                            "parameter_longname": "number[3]",
                                                             "parameter_modmode": 0,
                                                             "parameter_shortname": "number",
                                                             "parameter_type": 3

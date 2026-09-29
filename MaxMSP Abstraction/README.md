@@ -87,15 +87,27 @@ For simpler version of this effect, try [br.stutter.a](https://github.com/guagua
 
 ## <a name="Use"></a>How To Use
 
-Read the "About" section and inspect each inlet of the abstraction (hover over an inlet to see what it does).
+The first two inlets are for the left and the right stereo signals. The two outlets are the left and right outputs.
 
-**Upgrading from 1.0:** the Amp Width and Pan Spread inlets were removed, so Pan Mode moved from inlet 16 to inlet 15. Reconnect anything that was patched into the last two inlets. 
+Every control has its own inlet. Sending a value to an inlet moves its on-screen control too, so the display always matches the sound. Hover over an inlet in Max to see the same information.
 
+| Inlet | Control | Type | Range | Default |
+|---|---|---|---|---|
+| 1 | Left audio in | Signal | | |
+| 2 | Right audio in | Signal | | |
+| 3 | Stutter On/Off | Int | 0 = Off, 1 = On | 0 |
+| 4 | Retrigger | Bang |  |  |
+| 5 | Speed | Float | -32 - 32 | 1 |
+| 6 | Latent Mode | Int | 0 = Off, 1 = On | 1 |
+| 7 | Mix Mode | Int | 0 = Insert, 1 = Gate | 1 |
+| 8 | Size 1 | Float | 5 - 1000 ms | 5 |
+| 9 | Size 2 | Float | 5 - 1000 ms | 1000 |
+| 10 | Filter Type | Int | 0 = Off, 1 = Lowpass, 2 = Bandpass | 0 |
+| 11 | Filter Shape | Int | 0 = Sine, 1 = Up, 2 = Tri, 3 = Down, 4 = Square, 5 = Rand Step, 6 = Rand Ramp | 0 |
+| 12 | Freq 1 | Float | 40 - 20000 Hz | 80 |
+| 13 | Freq 2 | Float | 40 - 20000 Hz | 8000 |
+| 14 | Resonance | Float | 0 - 0.85 | 0 |
+| 15 | Amp Mode | Int | 0 = Off, 1 = Sine, 2 = Up, 3 = Tri, 4 = Down, 5 = Square, 6 = Rand Step, 7 = Rand Ramp | 0 |
+| 16 | Pan Mode | Int | 0 = Off, 1 = Sine, 2 = Right, 3 = Tri, 4 = Left, 5 = Alt, 6 = Rand Step, 7 = Rand Ramp, 8 = Rand Start | 0 |
 
-
- 
-
-
-
-
-
+**Upgrading from 1.0:** the Amp Width and Pan Spread inlets were removed, so Pan Mode moved from inlet 17 to inlet 16. Reconnect anything that was patched into the last two inlets.

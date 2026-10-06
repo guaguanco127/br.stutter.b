@@ -71,3 +71,10 @@ For simpler version of this effect, try [br.stutter.a](https://github.com/guagua
 
 **Pan Mode:** Defines how the grains will be panned in the stereo field. The different modes are sine tone, right (each grain moves from left to right), triangle, left (each grain moves from right to left), alt (each grain alternates between hard left then right), rand step (each grain starts from a random position) rand ramp (each grain pans in a random direction for its duration before moving differently each time), and rand start (each re-trigger plays from a different random panning position. 
 
+## <a name="Credits"></a>Credits
+
+Built around stutter~ (Cycling '74).
+
+## <a name="Credits"></a>Credits
+
+Built around stutter~ (Cycling '74).

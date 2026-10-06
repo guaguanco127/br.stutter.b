@@ -111,3 +111,7 @@ Every control has its own inlet. Sending a value to an inlet moves its on-screen
 | 16 | Pan Mode | Int | 0 = Off, 1 = Sine, 2 = Right, 3 = Tri, 4 = Left, 5 = Alt, 6 = Rand Step, 7 = Rand Ramp, 8 = Rand Start | 0 |
 
 **Upgrading from 1.0:** the Amp Width and Pan Spread inlets were removed, so Pan Mode moved from inlet 17 to inlet 16. Reconnect anything that was patched into the last two inlets.
+
+## <a name="Credits"></a>Credits
+
+Built around stutter~ (Cycling '74).

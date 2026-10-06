@@ -95,7 +95,6 @@ Copy and paste br.stutter.b.1.1.amxd into that folder
 
  
 
+## <a name="Credits"></a>Credits
 
-
-
-
+Built around stutter~ (Cycling '74).

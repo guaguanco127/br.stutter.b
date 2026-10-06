@@ -1,5 +1,6 @@
 {
 	"patcher": {
+"description" : "br.stutter.b.abs.1.1 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/ -- Credits: built around stutter~ (Cycling '74).",
 		"fileversion": 1,
 		"appversion": {
 			"major": 9,
@@ -19,6 +20,8 @@
 		"openinpresentation": 1,
 		"devicewidth": 263.0,
 		"boxes": [
+{"box": {"id": "obj-signature", "maxclass": "comment", "numinlets": 1, "numoutlets": 0, "patching_rect": [490.0, 0.0, 520.0, 60.0], "text": "br.stutter.b.abs.1.1 -- Created by Brian Riordan, guaguanco127@gmail.com\nhttps://github.com/guaguanco127/\nCredits: built around stutter~ (Cycling '74).", "linecount": 3}},
+
 			{
 				"box": {
 					"comment": "Pan Mode (Int) 0 = Off, 1 = Sine, 2 = Right, 3 = Tri, 4 = Left, 5 = Alt, 6 = Rand Step, 7 = Rand Ramp, 8 = Rand Start. Default 0",
@@ -4713,7 +4716,7 @@
 							},
 							{
 								"box": {
-									"id": "obj-67",
+									"id": "obj-67", "hint" : "br.stutter.b.abs.1.1 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/ -- Credits: built around stutter~ (Cycling '74).", "annotation" : "br.stutter.b.abs.1.1 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/ -- Credits: built around stutter~ (Cycling '74).",
 									"maxclass": "number",
 									"numinlets": 1,
 									"numoutlets": 2,

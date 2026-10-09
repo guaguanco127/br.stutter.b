@@ -1,24 +1,32 @@
 # Max/MSP Patches, Abstractions, Externals, RNBO, VSTs, and Ableton Max for Live 
 
-## br.stutter.b.1.1
+## br.stutter.b.1.2
 
 By Brian Riordan  
 [guaguanco127@gmail.com](mailto:guaguanco127@gmail.com)  
 [brianriordanmusic@gmail.com](mailto:brianriordanmusic@gmail.com)  
 [https://www.brianriordanmusic.com/](https://www.brianriordanmusic.com/) 
   
-Repository for br.stutter.b.1.1, with all related files, can be found here: [https://github.com/guaguanco127/br.stutter.b](https://github.com/guaguanco127/br.stutter.b)  
+Repository for br.stutter.b.1.2, with all related files, can be found here: [https://github.com/guaguanco127/br.stutter.b](https://github.com/guaguanco127/br.stutter.b)  
 Additional programs can be found here: [https://github.com/guaguanco127/br.max](https://github.com/guaguanco127/br.max)
 
-Version 1.1 was updated with Max 9. Version 1.0 was created with Max/MSP 8.5.6. 
+Versions 1.1 and 1.2 were updated with Max 9. Version 1.0 was created with Max/MSP 8.5.6. 
 
 ## Links
 
+[What's New in 1.2](#whats-new-in-12)  
 [What's New in 1.1](#whats-new-in-11)  
 [About](#About)   
 [Ableton Max for Live Device](https://github.com/guaguanco127/br.stutter.b/tree/main/Ableton%20Max%20For%20Live) To use inside of Ableton Suite   
 [Max/MSP Abstraction](https://github.com/guaguanco127/br.stutter.b/tree/main/MaxMSP%20Abstraction) To use as an abstraction within Max/MSP   
 
+
+## What's New in 1.2
+
+- **State outlet** (abstraction only): a new last outlet sends every setting as a named message the moment it changes (`on`, `speed`, `latent`, `mode`, `size1`, `size2`, `filtertype`, `filtershape`, `freq1`, `freq2`, `resonance`, `ampmode`, `panmode`). See [State outlet](https://github.com/guaguanco127/br.stutter.b/tree/main/MaxMSP%20Abstraction#State).
+- Every inlet and the L/R outlets are unchanged, so 1.2 swaps in for 1.1 without rewiring.
+- **New example patch:** _br.stutter.b.example.1.2 with a demo source, messages into every inlet and a State outlet tab.
+- The controls have readable names (Stutter, Retrigger, Speed, Latent, Mix Mode, Size 1, Size 2, Filter Type, Filter Shape, Freq 1, Freq 2, Resonance, Amp Mode, Pan Mode), so presets, pattr and Live's automation show them clearly.
 
 ## What's New in 1.1
 
@@ -71,9 +79,11 @@ For simpler version of this effect, try [br.stutter.a](https://github.com/guagua
 
 **Pan Mode:** Defines how the grains will be panned in the stereo field. The different modes are sine tone, right (each grain moves from left to right), triangle, left (each grain moves from right to left), alt (each grain alternates between hard left then right), rand step (each grain starts from a random position) rand ramp (each grain pans in a random direction for its duration before moving differently each time), and rand start (each re-trigger plays from a different random panning position. 
 
-## <a name="Credits"></a>Credits
+## Version History  
 
-Built around stutter~ (Cycling '74).
+Version 1.2 (10-09-2026) added a State outlet and an example patch to the abstraction, and readable control names.  
+Version 1.1 was updated with Max 9 (see What's New in 1.1).  
+Version 1.0 was created with Max/MSP 8.5.6.
 
 ## <a name="Credits"></a>Credits
 

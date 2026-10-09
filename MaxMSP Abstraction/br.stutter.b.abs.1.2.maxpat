@@ -1,6 +1,6 @@
 {
 	"patcher": {
-"description" : "br.stutter.b.abs.1.1 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/ -- Credits: built around stutter~ (Cycling '74).",
+		"description": "br.stutter.b.abs.1.2 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/ -- Credits: built around stutter~ (Cycling '74).",
 		"fileversion": 1,
 		"appversion": {
 			"major": 9,
@@ -20,8 +20,793 @@
 		"openinpresentation": 1,
 		"devicewidth": 263.0,
 		"boxes": [
-{"box": {"id": "obj-signature", "maxclass": "comment", "numinlets": 1, "numoutlets": 0, "patching_rect": [490.0, 0.0, 520.0, 60.0], "text": "br.stutter.b.abs.1.1 -- Created by Brian Riordan, guaguanco127@gmail.com\nhttps://github.com/guaguanco127/\nCredits: built around stutter~ (Cycling '74).", "linecount": 3}},
-
+			{
+				"box": {
+					"id": "st-t-on",
+					"maxclass": "newobj",
+					"numinlets": 1,
+					"numoutlets": 2,
+					"outlettype": [
+						"int",
+						"int"
+					],
+					"text": "t i i",
+					"patching_rect": [
+						233.0,
+						168.0,
+						40.0,
+						22.0
+					]
+				}
+			},
+			{
+				"box": {
+					"id": "st-c-on",
+					"maxclass": "newobj",
+					"numinlets": 3,
+					"numoutlets": 3,
+					"outlettype": [
+						"",
+						"int",
+						"int"
+					],
+					"patching_rect": [
+						2317.0,
+						2501.0,
+						62.0,
+						22.0
+					],
+					"text": "change 0"
+				}
+			},
+			{
+				"box": {
+					"id": "st-p-on",
+					"maxclass": "newobj",
+					"numinlets": 1,
+					"numoutlets": 1,
+					"outlettype": [
+						""
+					],
+					"patching_rect": [
+						2317.0,
+						2531.0,
+						74.0,
+						22.0
+					],
+					"text": "prepend on"
+				}
+			},
+			{
+				"box": {
+					"id": "st-t-speed",
+					"maxclass": "newobj",
+					"numinlets": 1,
+					"numoutlets": 2,
+					"outlettype": [
+						"float",
+						"float"
+					],
+					"text": "t f f",
+					"patching_rect": [
+						410.5,
+						859.0,
+						40.0,
+						22.0
+					]
+				}
+			},
+			{
+				"box": {
+					"id": "st-c-speed",
+					"maxclass": "newobj",
+					"numinlets": 3,
+					"numoutlets": 3,
+					"outlettype": [
+						"",
+						"int",
+						"int"
+					],
+					"patching_rect": [
+						2467.0,
+						2501.0,
+						62.0,
+						22.0
+					],
+					"text": "change 0."
+				}
+			},
+			{
+				"box": {
+					"id": "st-p-speed",
+					"maxclass": "newobj",
+					"numinlets": 1,
+					"numoutlets": 1,
+					"outlettype": [
+						""
+					],
+					"patching_rect": [
+						2467.0,
+						2531.0,
+						92.5,
+						22.0
+					],
+					"text": "prepend speed"
+				}
+			},
+			{
+				"box": {
+					"id": "st-t-latent",
+					"maxclass": "newobj",
+					"numinlets": 1,
+					"numoutlets": 2,
+					"outlettype": [
+						"int",
+						"int"
+					],
+					"text": "t i i",
+					"patching_rect": [
+						435.1,
+						345.0,
+						40.0,
+						22.0
+					]
+				}
+			},
+			{
+				"box": {
+					"id": "st-c-latent",
+					"maxclass": "newobj",
+					"numinlets": 3,
+					"numoutlets": 3,
+					"outlettype": [
+						"",
+						"int",
+						"int"
+					],
+					"patching_rect": [
+						2617.0,
+						2501.0,
+						62.0,
+						22.0
+					],
+					"text": "change 0"
+				}
+			},
+			{
+				"box": {
+					"id": "st-p-latent",
+					"maxclass": "newobj",
+					"numinlets": 1,
+					"numoutlets": 1,
+					"outlettype": [
+						""
+					],
+					"patching_rect": [
+						2617.0,
+						2531.0,
+						99.0,
+						22.0
+					],
+					"text": "prepend latent"
+				}
+			},
+			{
+				"box": {
+					"id": "st-t-mode",
+					"maxclass": "newobj",
+					"numinlets": 1,
+					"numoutlets": 2,
+					"outlettype": [
+						"int",
+						"int"
+					],
+					"text": "t i i",
+					"patching_rect": [
+						494.4,
+						2452.0,
+						40.0,
+						22.0
+					]
+				}
+			},
+			{
+				"box": {
+					"id": "st-c-mode",
+					"maxclass": "newobj",
+					"numinlets": 3,
+					"numoutlets": 3,
+					"outlettype": [
+						"",
+						"int",
+						"int"
+					],
+					"patching_rect": [
+						2767.0,
+						2501.0,
+						62.0,
+						22.0
+					],
+					"text": "change 0"
+				}
+			},
+			{
+				"box": {
+					"id": "st-p-mode",
+					"maxclass": "newobj",
+					"numinlets": 1,
+					"numoutlets": 1,
+					"outlettype": [
+						""
+					],
+					"patching_rect": [
+						2767.0,
+						2531.0,
+						86.0,
+						22.0
+					],
+					"text": "prepend mode"
+				}
+			},
+			{
+				"box": {
+					"id": "st-t-size1",
+					"maxclass": "newobj",
+					"numinlets": 1,
+					"numoutlets": 2,
+					"outlettype": [
+						"float",
+						"float"
+					],
+					"text": "t f f",
+					"patching_rect": [
+						1204.0,
+						202.5,
+						40.0,
+						22.0
+					]
+				}
+			},
+			{
+				"box": {
+					"id": "st-c-size1",
+					"maxclass": "newobj",
+					"numinlets": 3,
+					"numoutlets": 3,
+					"outlettype": [
+						"",
+						"int",
+						"int"
+					],
+					"patching_rect": [
+						2917.0,
+						2501.0,
+						62.0,
+						22.0
+					],
+					"text": "change 0."
+				}
+			},
+			{
+				"box": {
+					"id": "st-p-size1",
+					"maxclass": "newobj",
+					"numinlets": 1,
+					"numoutlets": 1,
+					"outlettype": [
+						""
+					],
+					"patching_rect": [
+						2917.0,
+						2531.0,
+						92.5,
+						22.0
+					],
+					"text": "prepend size1"
+				}
+			},
+			{
+				"box": {
+					"id": "st-t-size2",
+					"maxclass": "newobj",
+					"numinlets": 1,
+					"numoutlets": 2,
+					"outlettype": [
+						"float",
+						"float"
+					],
+					"text": "t f f",
+					"patching_rect": [
+						1311.0,
+						174.5,
+						40.0,
+						22.0
+					]
+				}
+			},
+			{
+				"box": {
+					"id": "st-c-size2",
+					"maxclass": "newobj",
+					"numinlets": 3,
+					"numoutlets": 3,
+					"outlettype": [
+						"",
+						"int",
+						"int"
+					],
+					"patching_rect": [
+						3067.0,
+						2501.0,
+						62.0,
+						22.0
+					],
+					"text": "change 0."
+				}
+			},
+			{
+				"box": {
+					"id": "st-p-size2",
+					"maxclass": "newobj",
+					"numinlets": 1,
+					"numoutlets": 1,
+					"outlettype": [
+						""
+					],
+					"patching_rect": [
+						3067.0,
+						2531.0,
+						92.5,
+						22.0
+					],
+					"text": "prepend size2"
+				}
+			},
+			{
+				"box": {
+					"id": "st-t-filtertype",
+					"maxclass": "newobj",
+					"numinlets": 1,
+					"numoutlets": 2,
+					"outlettype": [
+						"int",
+						"int"
+					],
+					"text": "t i i",
+					"patching_rect": [
+						1452.0,
+						1947.5,
+						40.0,
+						22.0
+					]
+				}
+			},
+			{
+				"box": {
+					"id": "st-c-filtertype",
+					"maxclass": "newobj",
+					"numinlets": 3,
+					"numoutlets": 3,
+					"outlettype": [
+						"",
+						"int",
+						"int"
+					],
+					"patching_rect": [
+						3217.0,
+						2501.0,
+						62.0,
+						22.0
+					],
+					"text": "change 0"
+				}
+			},
+			{
+				"box": {
+					"id": "st-p-filtertype",
+					"maxclass": "newobj",
+					"numinlets": 1,
+					"numoutlets": 1,
+					"outlettype": [
+						""
+					],
+					"patching_rect": [
+						3217.0,
+						2531.0,
+						125.0,
+						22.0
+					],
+					"text": "prepend filtertype"
+				}
+			},
+			{
+				"box": {
+					"id": "st-t-filtershape",
+					"maxclass": "newobj",
+					"numinlets": 1,
+					"numoutlets": 2,
+					"outlettype": [
+						"int",
+						"int"
+					],
+					"text": "t i i",
+					"patching_rect": [
+						1528.0,
+						1947.5,
+						40.0,
+						22.0
+					]
+				}
+			},
+			{
+				"box": {
+					"id": "st-c-filtershape",
+					"maxclass": "newobj",
+					"numinlets": 3,
+					"numoutlets": 3,
+					"outlettype": [
+						"",
+						"int",
+						"int"
+					],
+					"patching_rect": [
+						3367.0,
+						2501.0,
+						62.0,
+						22.0
+					],
+					"text": "change 0"
+				}
+			},
+			{
+				"box": {
+					"id": "st-p-filtershape",
+					"maxclass": "newobj",
+					"numinlets": 1,
+					"numoutlets": 1,
+					"outlettype": [
+						""
+					],
+					"patching_rect": [
+						3367.0,
+						2531.0,
+						131.5,
+						22.0
+					],
+					"text": "prepend filtershape"
+				}
+			},
+			{
+				"box": {
+					"id": "st-t-freq1",
+					"maxclass": "newobj",
+					"numinlets": 1,
+					"numoutlets": 2,
+					"outlettype": [
+						"float",
+						"float"
+					],
+					"text": "t f f",
+					"patching_rect": [
+						1622.0,
+						1950.5,
+						40.0,
+						22.0
+					]
+				}
+			},
+			{
+				"box": {
+					"id": "st-c-freq1",
+					"maxclass": "newobj",
+					"numinlets": 3,
+					"numoutlets": 3,
+					"outlettype": [
+						"",
+						"int",
+						"int"
+					],
+					"patching_rect": [
+						3517.0,
+						2501.0,
+						62.0,
+						22.0
+					],
+					"text": "change 0."
+				}
+			},
+			{
+				"box": {
+					"id": "st-p-freq1",
+					"maxclass": "newobj",
+					"numinlets": 1,
+					"numoutlets": 1,
+					"outlettype": [
+						""
+					],
+					"patching_rect": [
+						3517.0,
+						2531.0,
+						92.5,
+						22.0
+					],
+					"text": "prepend freq1"
+				}
+			},
+			{
+				"box": {
+					"id": "st-t-freq2",
+					"maxclass": "newobj",
+					"numinlets": 1,
+					"numoutlets": 2,
+					"outlettype": [
+						"float",
+						"float"
+					],
+					"text": "t f f",
+					"patching_rect": [
+						1750.0,
+						1926.5,
+						40.0,
+						22.0
+					]
+				}
+			},
+			{
+				"box": {
+					"id": "st-c-freq2",
+					"maxclass": "newobj",
+					"numinlets": 3,
+					"numoutlets": 3,
+					"outlettype": [
+						"",
+						"int",
+						"int"
+					],
+					"patching_rect": [
+						3667.0,
+						2501.0,
+						62.0,
+						22.0
+					],
+					"text": "change 0."
+				}
+			},
+			{
+				"box": {
+					"id": "st-p-freq2",
+					"maxclass": "newobj",
+					"numinlets": 1,
+					"numoutlets": 1,
+					"outlettype": [
+						""
+					],
+					"patching_rect": [
+						3667.0,
+						2531.0,
+						92.5,
+						22.0
+					],
+					"text": "prepend freq2"
+				}
+			},
+			{
+				"box": {
+					"id": "st-t-resonance",
+					"maxclass": "newobj",
+					"numinlets": 1,
+					"numoutlets": 2,
+					"outlettype": [
+						"float",
+						"float"
+					],
+					"text": "t f f",
+					"patching_rect": [
+						1871.0,
+						1926.5,
+						40.0,
+						22.0
+					]
+				}
+			},
+			{
+				"box": {
+					"id": "st-c-resonance",
+					"maxclass": "newobj",
+					"numinlets": 3,
+					"numoutlets": 3,
+					"outlettype": [
+						"",
+						"int",
+						"int"
+					],
+					"patching_rect": [
+						3817.0,
+						2501.0,
+						62.0,
+						22.0
+					],
+					"text": "change 0."
+				}
+			},
+			{
+				"box": {
+					"id": "st-p-resonance",
+					"maxclass": "newobj",
+					"numinlets": 1,
+					"numoutlets": 1,
+					"outlettype": [
+						""
+					],
+					"patching_rect": [
+						3817.0,
+						2531.0,
+						118.5,
+						22.0
+					],
+					"text": "prepend resonance"
+				}
+			},
+			{
+				"box": {
+					"id": "st-t-ampmode",
+					"maxclass": "newobj",
+					"numinlets": 1,
+					"numoutlets": 2,
+					"outlettype": [
+						"int",
+						"int"
+					],
+					"text": "t i i",
+					"patching_rect": [
+						1978.5,
+						2121.0,
+						40.0,
+						22.0
+					]
+				}
+			},
+			{
+				"box": {
+					"id": "st-c-ampmode",
+					"maxclass": "newobj",
+					"numinlets": 3,
+					"numoutlets": 3,
+					"outlettype": [
+						"",
+						"int",
+						"int"
+					],
+					"patching_rect": [
+						3967.0,
+						2501.0,
+						62.0,
+						22.0
+					],
+					"text": "change 0"
+				}
+			},
+			{
+				"box": {
+					"id": "st-p-ampmode",
+					"maxclass": "newobj",
+					"numinlets": 1,
+					"numoutlets": 1,
+					"outlettype": [
+						""
+					],
+					"patching_rect": [
+						3967.0,
+						2531.0,
+						105.5,
+						22.0
+					],
+					"text": "prepend ampmode"
+				}
+			},
+			{
+				"box": {
+					"id": "st-t-panmode",
+					"maxclass": "newobj",
+					"numinlets": 1,
+					"numoutlets": 2,
+					"outlettype": [
+						"int",
+						"int"
+					],
+					"text": "t i i",
+					"patching_rect": [
+						2202.5,
+						2252.5,
+						40.0,
+						22.0
+					]
+				}
+			},
+			{
+				"box": {
+					"id": "st-c-panmode",
+					"maxclass": "newobj",
+					"numinlets": 3,
+					"numoutlets": 3,
+					"outlettype": [
+						"",
+						"int",
+						"int"
+					],
+					"patching_rect": [
+						4117.0,
+						2501.0,
+						62.0,
+						22.0
+					],
+					"text": "change 0"
+				}
+			},
+			{
+				"box": {
+					"id": "st-p-panmode",
+					"maxclass": "newobj",
+					"numinlets": 1,
+					"numoutlets": 1,
+					"outlettype": [
+						""
+					],
+					"patching_rect": [
+						4117.0,
+						2531.0,
+						105.5,
+						22.0
+					],
+					"text": "prepend panmode"
+				}
+			},
+			{
+				"box": {
+					"id": "st-out",
+					"maxclass": "outlet",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [
+						4267.0,
+						2621.0,
+						30.0,
+						30.0
+					],
+					"comment": "State: each setting as <name> <value> the moment it changes (on, speed, latent, mode, size1, size2, filtertype, filtershape, freq1, freq2, resonance, ampmode, panmode)"
+				}
+			},
+			{
+				"box": {
+					"id": "st-label",
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [
+						2317.0,
+						2471.0,
+						480.0,
+						20.0
+					],
+					"text": "State outlet: control -> t -> (old path) + change -> prepend <name> -> last outlet"
+				}
+			},
+			{
+				"box": {
+					"id": "obj-signature",
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [
+						490.0,
+						0.0,
+						520.0,
+						60.0
+					],
+					"text": "br.stutter.b.abs.1.2 -- Created by Brian Riordan, guaguanco127@gmail.com\nhttps://github.com/guaguanco127/\nCredits: built around stutter~ (Cycling '74).",
+					"linecount": 3
+				}
+			},
 			{
 				"box": {
 					"comment": "Pan Mode (Int) 0 = Off, 1 = Sine, 2 = Right, 3 = Tri, 4 = Left, 5 = Alt, 6 = Rand Step, 7 = Rand Ramp, 8 = Rand Start. Default 0",
@@ -474,14 +1259,14 @@
 								"off",
 								"on"
 							],
-							"parameter_longname": "live.button[1]",
+							"parameter_longname": "Retrigger",
 							"parameter_mmax": 1,
 							"parameter_modmode": 0,
 							"parameter_shortname": "live.button",
 							"parameter_type": 2
 						}
 					},
-					"varname": "live.button"
+					"varname": "Retrigger"
 				}
 			},
 			{
@@ -526,14 +1311,14 @@
 								0
 							],
 							"parameter_initial_enable": 1,
-							"parameter_longname": "live.menu[3]",
+							"parameter_longname": "Pan Mode",
 							"parameter_mmax": 8,
 							"parameter_modmode": 0,
 							"parameter_shortname": "live.menu",
 							"parameter_type": 2
 						}
 					},
-					"varname": "live.menu[3]"
+					"varname": "Pan Mode"
 				}
 			},
 			{
@@ -1546,14 +2331,14 @@
 								0
 							],
 							"parameter_initial_enable": 1,
-							"parameter_longname": "live.menu[2]",
+							"parameter_longname": "Amp Mode",
 							"parameter_mmax": 7,
 							"parameter_modmode": 0,
 							"parameter_shortname": "live.menu",
 							"parameter_type": 2
 						}
 					},
-					"varname": "live.menu[2]"
+					"varname": "Amp Mode"
 				}
 			},
 			{
@@ -2316,14 +3101,14 @@
 								0
 							],
 							"parameter_initial_enable": 1,
-							"parameter_longname": "live.menu[1]",
+							"parameter_longname": "Filter Shape",
 							"parameter_mmax": 6,
 							"parameter_modmode": 0,
 							"parameter_shortname": "live.menu",
 							"parameter_type": 2
 						}
 					},
-					"varname": "live.menu[1]"
+					"varname": "Filter Shape"
 				}
 			},
 			{
@@ -2362,14 +3147,14 @@
 								0
 							],
 							"parameter_initial_enable": 1,
-							"parameter_longname": "live.menu",
+							"parameter_longname": "Filter Type",
 							"parameter_mmax": 2,
 							"parameter_modmode": 0,
 							"parameter_shortname": "live.menu",
 							"parameter_type": 2
 						}
 					},
-					"varname": "live.menu"
+					"varname": "Filter Type"
 				}
 			},
 			{
@@ -2415,7 +3200,7 @@
 								0
 							],
 							"parameter_initial_enable": 1,
-							"parameter_longname": "live.dial[12]",
+							"parameter_longname": "Resonance",
 							"parameter_mmax": 0.85,
 							"parameter_modmode": 0,
 							"parameter_shortname": "Resonance",
@@ -2429,7 +3214,7 @@
 						1.0,
 						1.0
 					],
-					"varname": "live.dial[10]"
+					"varname": "Resonance"
 				}
 			},
 			{
@@ -2475,7 +3260,7 @@
 								8000
 							],
 							"parameter_initial_enable": 1,
-							"parameter_longname": "live.dial[9]",
+							"parameter_longname": "Freq 2",
 							"parameter_mmax": 20000.0,
 							"parameter_mmin": 40.0,
 							"parameter_modmode": 0,
@@ -2490,7 +3275,7 @@
 						1.0,
 						1.0
 					],
-					"varname": "live.dial[9]"
+					"varname": "Freq 2"
 				}
 			},
 			{
@@ -2536,7 +3321,7 @@
 								80
 							],
 							"parameter_initial_enable": 1,
-							"parameter_longname": "live.dial[1]",
+							"parameter_longname": "Freq 1",
 							"parameter_mmax": 20000.0,
 							"parameter_mmin": 40.0,
 							"parameter_modmode": 0,
@@ -2551,7 +3336,7 @@
 						1.0,
 						1.0
 					],
-					"varname": "live.dial[1]"
+					"varname": "Freq 1"
 				}
 			},
 			{
@@ -4548,7 +5333,7 @@
 								1
 							],
 							"parameter_initial_enable": 1,
-							"parameter_longname": "live.text[5]",
+							"parameter_longname": "Mix Mode",
 							"parameter_mmax": 1,
 							"parameter_modmode": 0,
 							"parameter_shortname": "live.text[1]",
@@ -4557,7 +5342,7 @@
 					},
 					"text": "Insert",
 					"texton": "Gate",
-					"varname": "live.text[4]"
+					"varname": "Mix Mode"
 				}
 			},
 			{
@@ -4716,7 +5501,9 @@
 							},
 							{
 								"box": {
-									"id": "obj-67", "hint" : "br.stutter.b.abs.1.1 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/ -- Credits: built around stutter~ (Cycling '74).", "annotation" : "br.stutter.b.abs.1.1 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/ -- Credits: built around stutter~ (Cycling '74).",
+									"id": "obj-67",
+									"hint": "br.stutter.b.abs.1.2 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/ -- Credits: built around stutter~ (Cycling '74).",
+									"annotation": "br.stutter.b.abs.1.2 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/ -- Credits: built around stutter~ (Cycling '74).",
 									"maxclass": "number",
 									"numinlets": 1,
 									"numoutlets": 2,
@@ -5818,7 +6605,7 @@
 								1
 							],
 							"parameter_initial_enable": 1,
-							"parameter_longname": "live.text[7]",
+							"parameter_longname": "Latent",
 							"parameter_mmax": 1,
 							"parameter_modmode": 0,
 							"parameter_shortname": "live.text[1]",
@@ -5827,7 +6614,7 @@
 					},
 					"text": "Latent",
 					"texton": "Latent",
-					"varname": "live.text[3]"
+					"varname": "Latent"
 				}
 			},
 			{
@@ -5908,7 +6695,7 @@
 								"Stutter ",
 								"val2"
 							],
-							"parameter_longname": "live.text[6]",
+							"parameter_longname": "Stutter",
 							"parameter_mmax": 1,
 							"parameter_modmode": 0,
 							"parameter_shortname": "live.text[1]",
@@ -5917,7 +6704,7 @@
 					},
 					"text": "Stutter",
 					"texton": "Stutter",
-					"varname": "live.text[1]"
+					"varname": "Stutter"
 				}
 			},
 			{
@@ -5951,7 +6738,7 @@
 							"parameter_initial": [
 								10000
 							],
-							"parameter_longname": "live.numbox[4]",
+							"parameter_longname": "Size Readout",
 							"parameter_mmax": 2000.0,
 							"parameter_modmode": 0,
 							"parameter_shortname": "live.numbox",
@@ -5959,7 +6746,7 @@
 							"parameter_unitstyle": 1
 						}
 					},
-					"varname": "live.numbox[2]"
+					"varname": "Size Readout"
 				}
 			},
 			{
@@ -6004,7 +6791,7 @@
 								1000
 							],
 							"parameter_initial_enable": 1,
-							"parameter_longname": "live.dial[10]",
+							"parameter_longname": "Size 2",
 							"parameter_mmax": 1000.0,
 							"parameter_mmin": 5.0,
 							"parameter_modmode": 0,
@@ -6019,7 +6806,7 @@
 						1.0,
 						1.0
 					],
-					"varname": "live.dial[5]"
+					"varname": "Size 2"
 				}
 			},
 			{
@@ -6064,7 +6851,7 @@
 								5.0
 							],
 							"parameter_initial_enable": 1,
-							"parameter_longname": "live.dial[11]",
+							"parameter_longname": "Size 1",
 							"parameter_mmax": 1000.0,
 							"parameter_mmin": 5.0,
 							"parameter_modmode": 0,
@@ -6079,7 +6866,7 @@
 						1.0,
 						1.0
 					],
-					"varname": "live.dial[4]"
+					"varname": "Size 1"
 				}
 			},
 			{
@@ -6465,7 +7252,7 @@
 								1
 							],
 							"parameter_initial_enable": 1,
-							"parameter_longname": "live.numbox[3]",
+							"parameter_longname": "Speed",
 							"parameter_mmax": 32.0,
 							"parameter_mmin": -32.0,
 							"parameter_modmode": 0,
@@ -6474,7 +7261,7 @@
 							"parameter_unitstyle": 1
 						}
 					},
-					"varname": "live.numbox"
+					"varname": "Speed"
 				}
 			},
 			{
@@ -15377,8 +16164,8 @@
 						0
 					],
 					"source": [
-						"obj-16",
-						0
+						"st-t-on",
+						1
 					]
 				}
 			},
@@ -15407,8 +16194,8 @@
 						3
 					],
 					"source": [
-						"obj-22",
-						0
+						"st-t-mode",
+						1
 					]
 				}
 			},
@@ -15443,8 +16230,8 @@
 						4
 					],
 					"source": [
-						"obj-29",
-						0
+						"st-t-freq1",
+						1
 					]
 				}
 			},
@@ -15455,8 +16242,8 @@
 						5
 					],
 					"source": [
-						"obj-30",
-						0
+						"st-t-freq2",
+						1
 					]
 				}
 			},
@@ -15467,8 +16254,8 @@
 						6
 					],
 					"source": [
-						"obj-31",
-						0
+						"st-t-resonance",
+						1
 					]
 				}
 			},
@@ -15486,8 +16273,8 @@
 					],
 					"order": 1,
 					"source": [
-						"obj-32",
-						0
+						"st-t-speed",
+						1
 					]
 				}
 			},
@@ -15505,8 +16292,8 @@
 					],
 					"order": 0,
 					"source": [
-						"obj-32",
-						0
+						"st-t-speed",
+						1
 					]
 				}
 			},
@@ -15517,8 +16304,8 @@
 						2
 					],
 					"source": [
-						"obj-33",
-						0
+						"st-t-filtertype",
+						1
 					]
 				}
 			},
@@ -15583,8 +16370,8 @@
 						3
 					],
 					"source": [
-						"obj-41",
-						0
+						"st-t-filtershape",
+						1
 					]
 				}
 			},
@@ -15619,8 +16406,8 @@
 						2
 					],
 					"source": [
-						"obj-45",
-						0
+						"st-t-ampmode",
+						1
 					]
 				}
 			},
@@ -15668,8 +16455,8 @@
 					],
 					"order": 1,
 					"source": [
-						"obj-52",
-						0
+						"st-t-latent",
+						1
 					]
 				}
 			},
@@ -15687,8 +16474,8 @@
 					],
 					"order": 0,
 					"source": [
-						"obj-52",
-						0
+						"st-t-latent",
+						1
 					]
 				}
 			},
@@ -15717,8 +16504,8 @@
 						2
 					],
 					"source": [
-						"obj-55",
-						0
+						"st-t-panmode",
+						1
 					]
 				}
 			},
@@ -16144,8 +16931,8 @@
 						988.75
 					],
 					"source": [
-						"obj-94",
-						0
+						"st-t-size1",
+						1
 					]
 				}
 			},
@@ -16162,8 +16949,8 @@
 						1001.75
 					],
 					"source": [
-						"obj-95",
-						0
+						"st-t-size2",
+						1
 					]
 				}
 			},
@@ -16418,6 +17205,630 @@
 					],
 					"source": [
 						"obj-999",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"obj-16",
+						0
+					],
+					"destination": [
+						"st-t-on",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"st-t-on",
+						0
+					],
+					"destination": [
+						"st-c-on",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"st-c-on",
+						0
+					],
+					"destination": [
+						"st-p-on",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"st-p-on",
+						0
+					],
+					"destination": [
+						"st-out",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"obj-32",
+						0
+					],
+					"destination": [
+						"st-t-speed",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"st-t-speed",
+						0
+					],
+					"destination": [
+						"st-c-speed",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"st-c-speed",
+						0
+					],
+					"destination": [
+						"st-p-speed",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"st-p-speed",
+						0
+					],
+					"destination": [
+						"st-out",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"obj-52",
+						0
+					],
+					"destination": [
+						"st-t-latent",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"st-t-latent",
+						0
+					],
+					"destination": [
+						"st-c-latent",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"st-c-latent",
+						0
+					],
+					"destination": [
+						"st-p-latent",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"st-p-latent",
+						0
+					],
+					"destination": [
+						"st-out",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"obj-22",
+						0
+					],
+					"destination": [
+						"st-t-mode",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"st-t-mode",
+						0
+					],
+					"destination": [
+						"st-c-mode",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"st-c-mode",
+						0
+					],
+					"destination": [
+						"st-p-mode",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"st-p-mode",
+						0
+					],
+					"destination": [
+						"st-out",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"obj-94",
+						0
+					],
+					"destination": [
+						"st-t-size1",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"st-t-size1",
+						0
+					],
+					"destination": [
+						"st-c-size1",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"st-c-size1",
+						0
+					],
+					"destination": [
+						"st-p-size1",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"st-p-size1",
+						0
+					],
+					"destination": [
+						"st-out",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"obj-95",
+						0
+					],
+					"destination": [
+						"st-t-size2",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"st-t-size2",
+						0
+					],
+					"destination": [
+						"st-c-size2",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"st-c-size2",
+						0
+					],
+					"destination": [
+						"st-p-size2",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"st-p-size2",
+						0
+					],
+					"destination": [
+						"st-out",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"obj-33",
+						0
+					],
+					"destination": [
+						"st-t-filtertype",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"st-t-filtertype",
+						0
+					],
+					"destination": [
+						"st-c-filtertype",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"st-c-filtertype",
+						0
+					],
+					"destination": [
+						"st-p-filtertype",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"st-p-filtertype",
+						0
+					],
+					"destination": [
+						"st-out",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"obj-41",
+						0
+					],
+					"destination": [
+						"st-t-filtershape",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"st-t-filtershape",
+						0
+					],
+					"destination": [
+						"st-c-filtershape",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"st-c-filtershape",
+						0
+					],
+					"destination": [
+						"st-p-filtershape",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"st-p-filtershape",
+						0
+					],
+					"destination": [
+						"st-out",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"obj-29",
+						0
+					],
+					"destination": [
+						"st-t-freq1",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"st-t-freq1",
+						0
+					],
+					"destination": [
+						"st-c-freq1",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"st-c-freq1",
+						0
+					],
+					"destination": [
+						"st-p-freq1",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"st-p-freq1",
+						0
+					],
+					"destination": [
+						"st-out",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"obj-30",
+						0
+					],
+					"destination": [
+						"st-t-freq2",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"st-t-freq2",
+						0
+					],
+					"destination": [
+						"st-c-freq2",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"st-c-freq2",
+						0
+					],
+					"destination": [
+						"st-p-freq2",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"st-p-freq2",
+						0
+					],
+					"destination": [
+						"st-out",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"obj-31",
+						0
+					],
+					"destination": [
+						"st-t-resonance",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"st-t-resonance",
+						0
+					],
+					"destination": [
+						"st-c-resonance",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"st-c-resonance",
+						0
+					],
+					"destination": [
+						"st-p-resonance",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"st-p-resonance",
+						0
+					],
+					"destination": [
+						"st-out",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"obj-45",
+						0
+					],
+					"destination": [
+						"st-t-ampmode",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"st-t-ampmode",
+						0
+					],
+					"destination": [
+						"st-c-ampmode",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"st-c-ampmode",
+						0
+					],
+					"destination": [
+						"st-p-ampmode",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"st-p-ampmode",
+						0
+					],
+					"destination": [
+						"st-out",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"obj-55",
+						0
+					],
+					"destination": [
+						"st-t-panmode",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"st-t-panmode",
+						0
+					],
+					"destination": [
+						"st-c-panmode",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"st-c-panmode",
+						0
+					],
+					"destination": [
+						"st-p-panmode",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"st-p-panmode",
+						0
+					],
+					"destination": [
+						"st-out",
 						0
 					]
 				}

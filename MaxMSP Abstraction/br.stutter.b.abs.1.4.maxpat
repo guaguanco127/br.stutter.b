@@ -1,6 +1,6 @@
 {
 	"patcher": {
-		"description": "br.stutter.b.abs.1.3 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/ -- Credits: built around stutter~ (Cycling '74).",
+		"description": "br.stutter.b.abs.1.4 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/ -- Credits: built around stutter~ (Cycling '74).",
 		"fileversion": 1,
 		"appversion": {
 			"major": 9,
@@ -803,7 +803,7 @@
 						520.0,
 						60.0
 					],
-					"text": "br.stutter.b.abs.1.3 -- Created by Brian Riordan, guaguanco127@gmail.com\nhttps://github.com/guaguanco127/\nCredits: built around stutter~ (Cycling '74).",
+					"text": "br.stutter.b.abs.1.4 -- Created by Brian Riordan, guaguanco127@gmail.com\nhttps://github.com/guaguanco127/\nCredits: built around stutter~ (Cycling '74).",
 					"linecount": 3
 				}
 			},
@@ -5502,8 +5502,8 @@
 							{
 								"box": {
 									"id": "obj-67",
-									"hint": "br.stutter.b.abs.1.3 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/ -- Credits: built around stutter~ (Cycling '74).",
-									"annotation": "br.stutter.b.abs.1.3 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/ -- Credits: built around stutter~ (Cycling '74).",
+									"hint": "br.stutter.b.abs.1.4 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/ -- Credits: built around stutter~ (Cycling '74).",
+									"annotation": "br.stutter.b.abs.1.4 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/ -- Credits: built around stutter~ (Cycling '74).",
 									"maxclass": "number",
 									"numinlets": 1,
 									"numoutlets": 2,
@@ -7913,10 +7913,11 @@
 					"id": "obj-62",
 					"maxclass": "newobj",
 					"numinlets": 6,
-					"numoutlets": 2,
+					"numoutlets": 3,
 					"outlettype": [
 						"multichannelsignal",
-						"signal"
+						"signal",
+						"bang"
 					],
 					"patcher": {
 						"fileversion": 1,
@@ -11384,9 +11385,10 @@
 									"id": "obj-16",
 									"maxclass": "newobj",
 									"numinlets": 1,
-									"numoutlets": 2,
+									"numoutlets": 3,
 									"outlettype": [
 										"int",
+										"bang",
 										"bang"
 									],
 									"patching_rect": [
@@ -11395,7 +11397,7 @@
 										29.5,
 										22.0
 									],
-									"text": "t i b"
+									"text": "t i b b"
 								}
 							},
 							{
@@ -14761,6 +14763,36 @@
 									],
 									"text": "speedlim 50"
 								}
+							},
+							{
+								"box": {
+									"id": "obj-1300",
+									"maxclass": "outlet",
+									"numinlets": 1,
+									"numoutlets": 0,
+									"patching_rect": [
+										1100.0,
+										1142.0,
+										30.0,
+										30.0
+									],
+									"comment": "Grab (bang): one per new grain, at the swap"
+								}
+							},
+							{
+								"box": {
+									"id": "obj-1302",
+									"maxclass": "comment",
+									"numinlets": 1,
+									"numoutlets": 0,
+									"patching_rect": [
+										1100.0,
+										1080.0,
+										260.0,
+										47.0
+									],
+									"text": "grab: t i b b fires the player flip first, then this bang. Every new grain passes here (Retrigger, Latent, engage)."
+								}
 							}
 						],
 						"lines": [
@@ -14832,7 +14864,7 @@
 									],
 									"source": [
 										"obj-16",
-										1
+										2
 									]
 								}
 							},
@@ -15536,6 +15568,18 @@
 										0
 									]
 								}
+							},
+							{
+								"patchline": {
+									"source": [
+										"obj-16",
+										1
+									],
+									"destination": [
+										"obj-1300",
+										0
+									]
+								}
 							}
 						]
 					},
@@ -16019,6 +16063,36 @@
 						22.0
 					],
 					"text": "t b b"
+				}
+			},
+			{
+				"box": {
+					"id": "grab-out",
+					"maxclass": "outlet",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [
+						4362.0,
+						2621.0,
+						30.0,
+						30.0
+					],
+					"comment": "Grab (bang): one bang on every new grain. Cord it to anything that should follow the stutter"
+				}
+			},
+			{
+				"box": {
+					"id": "obj-1303",
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [
+						985.0,
+						1425.0,
+						300.0,
+						33.0
+					],
+					"text": "Grab: one bang per new grain -> last outlet (to trigger other patches or slots)"
 				}
 			}
 		],
@@ -17874,6 +17948,18 @@
 					],
 					"destination": [
 						"st-out",
+						0
+					]
+				}
+			},
+			{
+				"patchline": {
+					"source": [
+						"obj-62",
+						2
+					],
+					"destination": [
+						"grab-out",
 						0
 					]
 				}

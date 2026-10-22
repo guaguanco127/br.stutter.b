@@ -4172,14 +4172,13 @@
 										"rect": [
 											80.0,
 											80.0,
-											900.0,
-											760.0
+											1291.0,
+											900.0
 										],
 										"boxes": [
 											{
 												"box": {
 													"id": "obj-1",
-													"linecount": 2,
 													"maxclass": "newobj",
 													"numinlets": 0,
 													"numoutlets": 1,
@@ -4189,7 +4188,7 @@
 													"patching_rect": [
 														20.0,
 														20.0,
-														120.0,
+														151.0,
 														22.0
 													],
 													"text": "in 1 @comment \"Audio L\""
@@ -4198,7 +4197,6 @@
 											{
 												"box": {
 													"id": "obj-2",
-													"linecount": 2,
 													"maxclass": "newobj",
 													"numinlets": 0,
 													"numoutlets": 1,
@@ -4206,9 +4204,9 @@
 														""
 													],
 													"patching_rect": [
-														145.0,
+														186.0,
 														20.0,
-														120.0,
+														153.0,
 														22.0
 													],
 													"text": "in 2 @comment \"Audio R\""
@@ -4217,7 +4215,6 @@
 											{
 												"box": {
 													"id": "obj-3",
-													"linecount": 2,
 													"maxclass": "newobj",
 													"numinlets": 0,
 													"numoutlets": 1,
@@ -4225,9 +4222,9 @@
 														""
 													],
 													"patching_rect": [
-														270.0,
+														354.0,
 														20.0,
-														120.0,
+														166.0,
 														22.0
 													],
 													"text": "in 3 @comment \"Shape 0-1\""
@@ -4236,7 +4233,6 @@
 											{
 												"box": {
 													"id": "obj-4",
-													"linecount": 3,
 													"maxclass": "newobj",
 													"numinlets": 0,
 													"numoutlets": 1,
@@ -4244,9 +4240,9 @@
 														""
 													],
 													"patching_rect": [
-														395.0,
+														535.0,
 														20.0,
-														120.0,
+														231.0,
 														22.0
 													],
 													"text": "in 4 @comment \"Freq 1 Hz\" @default 80"
@@ -4255,7 +4251,6 @@
 											{
 												"box": {
 													"id": "obj-5",
-													"linecount": 3,
 													"maxclass": "newobj",
 													"numinlets": 0,
 													"numoutlets": 1,
@@ -4263,9 +4258,9 @@
 														""
 													],
 													"patching_rect": [
-														520.0,
+														781.0,
 														20.0,
-														120.0,
+														245.0,
 														22.0
 													],
 													"text": "in 5 @comment \"Freq 2 Hz\" @default 8000"
@@ -4274,7 +4269,7 @@
 											{
 												"box": {
 													"id": "obj-6",
-													"linecount": 3,
+													"linecount": 2,
 													"maxclass": "newobj",
 													"numinlets": 0,
 													"numoutlets": 1,
@@ -4282,10 +4277,10 @@
 														""
 													],
 													"patching_rect": [
-														645.0,
+														1041.0,
 														20.0,
-														120.0,
-														22.0
+														200.0,
+														35.0
 													],
 													"text": "in 6 @comment \"Resonance 0-0.85\" @default 0"
 												}
@@ -4293,7 +4288,7 @@
 											{
 												"box": {
 													"id": "obj-7",
-													"linecount": 3,
+													"linecount": 2,
 													"maxclass": "newobj",
 													"numinlets": 0,
 													"numoutlets": 1,
@@ -4301,10 +4296,10 @@
 														""
 													],
 													"patching_rect": [
-														770.0,
-														20.0,
-														120.0,
-														22.0
+														861.0,
+														143.0,
+														200.0,
+														35.0
 													],
 													"text": "in 7 @comment \"Bypass (type Off)\" @default 1"
 												}
@@ -4327,7 +4322,7 @@
 													],
 													"patching_rect": [
 														20.0,
-														60.0,
+														203.0,
 														860.0,
 														600.0
 													]
@@ -4341,8 +4336,8 @@
 													"numoutlets": 0,
 													"patching_rect": [
 														20.0,
-														680.0,
-														40.0,
+														833.0,
+														41.0,
 														22.0
 													],
 													"text": "out 1"
@@ -4355,9 +4350,9 @@
 													"numinlets": 1,
 													"numoutlets": 0,
 													"patching_rect": [
-														240.0,
-														680.0,
-														40.0,
+														300.3333333333333,
+														833.0,
+														41.0,
 														22.0
 													],
 													"text": "out 2"
@@ -4370,9 +4365,9 @@
 													"numinlets": 1,
 													"numoutlets": 0,
 													"patching_rect": [
-														460.0,
-														680.0,
-														40.0,
+														580.6666666666666,
+														833.0,
+														41.0,
 														22.0
 													],
 													"text": "out 3"
@@ -4385,9 +4380,9 @@
 													"numinlets": 1,
 													"numoutlets": 0,
 													"patching_rect": [
-														680.0,
-														680.0,
-														40.0,
+														861.0,
+														833.0,
+														41.0,
 														22.0
 													],
 													"text": "out 4"
@@ -4412,6 +4407,12 @@
 													"destination": [
 														"obj-20",
 														1
+													],
+													"midpoints": [
+														195.5,
+														70.0,
+														169.66666666666666,
+														70.0
 													],
 													"source": [
 														"obj-2",
@@ -4473,6 +4474,12 @@
 														"obj-20",
 														2
 													],
+													"midpoints": [
+														363.5,
+														82.0,
+														309.8333333333333,
+														82.0
+													],
 													"source": [
 														"obj-3",
 														0
@@ -4484,6 +4491,12 @@
 													"destination": [
 														"obj-20",
 														3
+													],
+													"midpoints": [
+														544.5,
+														94.0,
+														450.0,
+														94.0
 													],
 													"source": [
 														"obj-4",
@@ -4497,6 +4510,12 @@
 														"obj-20",
 														4
 													],
+													"midpoints": [
+														790.5,
+														106.0,
+														590.1666666666666,
+														106.0
+													],
 													"source": [
 														"obj-5",
 														0
@@ -4508,6 +4527,12 @@
 													"destination": [
 														"obj-20",
 														5
+													],
+													"midpoints": [
+														1050.5,
+														118.0,
+														730.3333333333334,
+														118.0
 													],
 													"source": [
 														"obj-6",

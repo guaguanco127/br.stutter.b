@@ -1,19 +1,20 @@
 # Max/MSP Patches, Abstractions, Externals, RNBO, VSTs, and Ableton Max for Live 
 
-## br.stutter.b.1.4
+## br.stutter.b.1.6
 
 By Brian Riordan  
 guaguanco127 [at] gmail [dot] com  
 brianriordanmusic [at] gmail [dot] com  
 [https://www.brianriordanmusic.com/](https://www.brianriordanmusic.com/) 
   
-Repository for br.stutter.b.1.4, with all related files, can be found here: [https://github.com/guaguanco127/br.stutter.b](https://github.com/guaguanco127/br.stutter.b)  
+Repository for br.stutter.b.1.6, with all related files, can be found here: [https://github.com/guaguanco127/br.stutter.b](https://github.com/guaguanco127/br.stutter.b)  
 Additional programs can be found here: [https://github.com/guaguanco127/br.max](https://github.com/guaguanco127/br.max)
 
-Versions 1.1 through 1.4 were updated with Max 9. Version 1.0 was created with Max/MSP 8.5.6. 
+Versions 1.1 through 1.6 were updated with Max 9. Version 1.0 was created with Max/MSP 8.5.6. 
 
 ## Links
 
+[What's New in 1.6](#whats-new-in-16)  
 [What's New in 1.4](#whats-new-in-14)  
 [What's New in 1.3](#whats-new-in-13)  
 [What's New in 1.2](#whats-new-in-12)  
@@ -24,6 +25,11 @@ Versions 1.1 through 1.4 were updated with Max 9. Version 1.0 was created with M
 
 
 **Max for Live note:** if Live's audio engine is off (no audio output device chosen, an orange bar at the bottom of Live), the device opens with its controls at 0 or their lowest value. Turn audio on and they jump to their default values by themselves.
+
+## What's New in 1.6
+
+- **Rand Step, Square and Tri fixed.** The filter, amp and pan shapes were switching at 99% of each grain instead of halfway. Rand Step now picks a new value between Freq 1 and Freq 2 (or a new level or pan position) every cycle instead of getting stuck, Square switches halfway, and Tri is a real triangle.
+- Every inlet, outlet and control is unchanged, so 1.6 swaps in for 1.4 without rewiring, and presets load the same.
 
 ## What's New in 1.4
 
@@ -99,6 +105,7 @@ For simpler version of this effect, try [br.stutter.a](https://github.com/guagua
 
 ## Version History  
 
+Version 1.6 (11-04-2026) fixed the filter, amp and pan shapes: Rand Step, Square and Tri now switch halfway through each cycle.  
 Version 1.4 (10-19-2026) added the Grab outlet (a bang on every new grain) and fixed the example patch's message wiring.  
 Version 1.3 (10-09-2026) renamed Mix Mode to Thru / Aux and fixed its swapped values (Thru, 0, is now the default).  
 Version 1.2 (10-09-2026) added a State outlet and an example patch to the abstraction, and readable control names.  

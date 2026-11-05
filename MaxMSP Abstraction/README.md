@@ -1,5 +1,5 @@
 # Max/MSP Abstraction:   
-## br.stutter.b.1.4
+## br.stutter.b.1.6
 
 
 
@@ -8,13 +8,14 @@ guaguanco127 [at] gmail [dot] com
 brianriordanmusic [at] gmail [dot] com  
 [https://www.brianriordanmusic.com/](https://www.brianriordanmusic.com/) 
   
-Repository for br.stutter.b.1.4, with all related files, can be found here: [https://github.com/guaguanco127/br.stutter.b](https://github.com/guaguanco127/br.stutter.b)  
+Repository for br.stutter.b.1.6, with all related files, can be found here: [https://github.com/guaguanco127/br.stutter.b](https://github.com/guaguanco127/br.stutter.b)  
 Additional programs can be found here: [https://github.com/guaguanco127/br.max](https://github.com/guaguanco127/br.max)
 
-Versions 1.1 through 1.4 were updated with Max 9. Version 1.0 was created with Max/MSP 8.5.6. 
+Versions 1.1 through 1.6 were updated with Max 9. Version 1.0 was created with Max/MSP 8.5.6. 
 
 ## Table of Contents 
 
+[What's New in 1.6](#whats-new-in-16)  
 [What's New in 1.4](#whats-new-in-14)  
 [What's New in 1.3](#whats-new-in-13)  
 [What's New in 1.2](#whats-new-in-12)  
@@ -27,6 +28,11 @@ Versions 1.1 through 1.4 were updated with Max 9. Version 1.0 was created with M
 [Example Patch](#Example) 
  
  
+
+## What's New in 1.6
+
+- **Rand Step, Square and Tri fixed.** The filter, amp and pan shapes were switching at 99% of each grain instead of halfway. Rand Step now picks a new value between Freq 1 and Freq 2 (or a new level or pan position) every cycle instead of getting stuck, Square switches halfway, and Tri is a real triangle.
+- Every inlet, outlet and control is unchanged, so 1.6 swaps in for 1.4 without rewiring, and presets load the same.
 
 ## What's New in 1.4
 
@@ -104,11 +110,11 @@ For simpler version of this effect, try [br.stutter.a](https://github.com/guagua
 
 1. Make sure you have Max 9 installed in your computer. And, make sure you are using a Max patch that is inside of a folder.  
 
-2. Copy and paste br.stutter.b.abs.1.4.maxpat inside of the same folder as the Max patch you are using.   
+2. Copy and paste br.stutter.b.abs.1.6.maxpat inside of the same folder as the Max patch you are using.   
 
-3. In the Max patch you are using, create an object called br.stutter.b.abs.1.4 
+3. In the Max patch you are using, create an object called br.stutter.b.abs.1.6 
 
-4. Alternatively, you could also create this inside of a bpatcher object and use all of the preset UI objects featured inside the abstraction. To do this, create a bpatcher object. Then, go inside of its inspector, select "choose" next to "Patcher File" and select the br.stutter.b.abs.1.4.maxpat located within the same folder as your project. 
+4. Alternatively, you could also create this inside of a bpatcher object and use all of the preset UI objects featured inside the abstraction. To do this, create a bpatcher object. Then, go inside of its inspector, select "choose" next to "Patcher File" and select the br.stutter.b.abs.1.6.maxpat located within the same folder as your project. 
 
 ## <a name="Use"></a>How To Use
 
@@ -168,7 +174,7 @@ Retrigger is a button, not a setting, so it is not reported. Menus report their 
 
 ## <a name="Example"></a>Example Patch
 
-Open _br.stutter.b.example.1.4.maxpat (keep it in the same folder as the abstraction). Turn on the audio with the toggle, then raise the gain slider, which starts muted.
+Open _br.stutter.b.example.1.6.maxpat (keep it in the same folder as the abstraction). Turn on the audio with the toggle, then raise the gain slider, which starts muted.
 
 - **Source:** the demo saw plucks (220 Hz left, 330 Hz right) start when the patch opens; turn on the mic / line in 1 + 2 toggle to use your own sound.
 - **Stutter:** turn it on (panel or toggle), press Retrigger for new grains, try the Speed and Size messages.
@@ -178,6 +184,7 @@ Open _br.stutter.b.example.1.4.maxpat (keep it in the same folder as the abstrac
 
 ## Version History  
 
+Version 1.6 (11-04-2026) fixed the filter, amp and pan shapes: Rand Step, Square and Tri now switch halfway through each cycle.  
 Version 1.4 (10-19-2026) added the Grab outlet (a bang on every new grain) and fixed the example patch's message wiring.  
 Version 1.3 (10-09-2026) renamed Mix Mode to Thru / Aux and fixed its swapped values (Thru, 0, is now the default).  
 Version 1.2 (10-09-2026) added a State outlet and an example patch to the abstraction, and readable control names.  
